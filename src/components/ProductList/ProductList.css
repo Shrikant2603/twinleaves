@@ -1,0 +1,25 @@
+.product-list-container {
+  height: 100%;
+  width: 100%;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .product-list-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-list-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

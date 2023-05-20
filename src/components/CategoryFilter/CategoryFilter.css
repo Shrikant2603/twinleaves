@@ -1,0 +1,19 @@
+.category-filter {
+  margin-bottom: 20px;
+}
+
+.category-label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.category-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #bebcbc;
+  border-radius: 4px;
+}

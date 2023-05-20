@@ -1,0 +1,29 @@
+.product-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.product-details-image {
+  flex: 1;
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+.product-details-image img {
+  max-width: 100%;
+}
+
+.product-details-info {
+  flex: 1;
+}
+
+.product-details-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-details-info p {
+  margin-bottom: 5px;
+}
