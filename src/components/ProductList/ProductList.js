@@ -85,7 +85,7 @@ const ProductList = () => {
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className="loader"></div>;
   }
 
   return (
