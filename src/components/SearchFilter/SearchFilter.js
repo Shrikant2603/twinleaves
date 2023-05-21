@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "./SearchFilter.css";
+import { useDispatch } from "react-redux";
+import { setFilteredProducts } from "../../actions/actions";
 
-const SearchFilter = ({ onSearch }) => {
+const SearchFilter = () => {
+  const dispatch = useDispatch();
   const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearchChange = (e) => {
-    const query = e.target.value;
-    setSearchQuery(query);
-    onSearch(query);
+    setSearchQuery(e.target.value);
+    dispatch(setFilteredProducts(searchQuery));
   };
 
   return (

@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import "./CategoryFilter.css";
+import { useDispatch, useSelector } from "react-redux";
+import { setCategoryFilter } from "../../actions/actions";
 
-const CategoryFilter = ({ onCategoryFilter }) => {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+const CategoryFilter = () => {
+  const selectedCategory = useSelector((state) => state.product.categoryFilter);
+  const dispatch = useDispatch();
 
-  const handleCategoryChange = (e) => {
-    const category = e.target.value;
-    setSelectedCategory(category);
-    onCategoryFilter(category);
+  const handleCategoryChange = (event) => {
+    const category = event.target.value;
+    dispatch(setCategoryFilter(category));
   };
 
   return (
